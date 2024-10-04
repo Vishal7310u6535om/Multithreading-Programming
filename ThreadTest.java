@@ -1,11 +1,8 @@
 class ThreadTest{
     public static void main(String[] args) {
-        A threadA=new A();
-        B threaB=new B();
-        C threadC=new C();
-        threadA.run();
-        threaB.run();
-        threadC.run();
+        new A().start();
+        new B().start();
+        new C().start();
     }
 }
 class A extends Thread{
